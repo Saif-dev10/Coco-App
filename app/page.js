@@ -1,65 +1,185 @@
-import Image from "next/image";
+import { Navbar } from "@/components/Navbar";
+import {
+  FaBirthdayCake,
+  FaTruck,
+  FaClock,
+  FaHeart,
+  FaStar,
+  FaPhone,
+  FaMapMarkerAlt,
+  FaEnvelope,
+  FaArrowRight,
+  FaFacebookF,
+  FaInstagram,
+  FaTwitter,
+  FaShoppingCart
+} from "react-icons/fa";
 
-export default function Home() {
+export default function Layout() {
+  const features = [
+    {
+      icon: <FaBirthdayCake size={28} />,
+      title: "Master Bakers",
+      description:
+        "Our expert bakers craft each item with passion and decades of experience."
+    },
+    {
+      icon: <FaTruck size={28} />,
+      title: "Fast Delivery",
+      description:
+        "Fresh from our oven to your doorstep within hours."
+    },
+    {
+      icon: <FaClock size={28} />,
+      title: "Always Fresh",
+      description:
+        "Baked daily using premium ingredients."
+    },
+    {
+      icon: <FaHeart size={28} />,
+      title: "Made with Love",
+      description:
+        "Every recipe is handcrafted with care."
+    }
+  ];
+
+  const testimonials = [
+    {
+      name: "Sarah Mitchell",
+      text: "The best cakes I've ever tasted."
+    },
+    {
+      name: "James Rodriguez",
+      text: "Consistent quality every single time."
+    },
+    {
+      name: "Emily Chen",
+      text: "Perfect for every event I organize."
+    }
+  ];
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.js file.
+    <main className="bg-white text-gray-900">
+      {/* HERO */}
+      <section className="relative min-h-screen bg-[url('/cake.jpg')] bg-cover bg-center bg-no-repeat">
+        <div className="absolute inset-0 bg-black/60"></div>
+
+        <div className="relative z-20">
+          <Navbar />
+        </div>
+
+        <div className="relative z-10 flex flex-col justify-center items-center text-center min-h-screen px-6 max-w-5xl mx-auto">
+          <h1 className="text-white text-5xl md:text-7xl font-bold leading-tight max-w-4xl">
+            Taste the Delight in Every Bite
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+
+          <p className="text-white/80 text-lg md:text-xl mt-6 max-w-2xl">
+            Handcrafted cakes and pastries made with love, delivered fresh to your door.
           </p>
+
+          <div className="flex flex-col sm:flex-row gap-4 mt-8">
+            <button className="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-lg text-white font-semibold transition">
+              Try Now
+            </button>
+
+            <button className="border border-white/50 hover:bg-white/10 px-8 py-3 rounded-lg text-white font-semibold transition">
+              View Menu
+            </button>
+          </div>
+
+          <div className="flex items-center gap-4 mt-10">
+            <div className="flex -space-x-3">
+              {[1, 2, 3, 4].map((i) => (
+                <div
+                  key={i}
+                  className="w-10 h-10 rounded-full bg-gray-300 border-2 border-white"
+                />
+              ))}
+            </div>
+            <p className="text-white/70">
+              Trusted by 10,000+ happy customers
+            </p>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* FEATURES */}
+      <section className="py-24 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl font-bold">Good Food, Made Easy</h2>
+          <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
+            We combine traditional baking with modern convenience.
+          </p>
+
+          <div className="grid md:grid-cols-4 gap-8 mt-14">
+            {features.map((feature, i) => (
+              <div
+                key={i}
+                className="bg-gray-50 p-8 rounded-2xl hover:shadow-xl transition"
+              >
+                <div className="text-blue-500 mb-4 flex justify-center">
+                  {feature.icon}
+                </div>
+                <h3 className="font-bold text-xl">{feature.title}</h3>
+                <p className="text-gray-600 mt-3">{feature.description}</p>
+              </div>
+            ))}
+          </div>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* TESTIMONIALS */}
+      <section className="py-24 px-6">
+        <div className="max-w-7xl mx-auto text-center">
+          <h2 className="text-4xl font-bold">
+            What Our Customers Say
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8 mt-14">
+            {testimonials.map((testimonial, i) => (
+              <div
+                key={i}
+                className="bg-gray-50 p-8 rounded-2xl"
+              >
+                <div className="flex justify-center text-yellow-500 mb-4">
+                  {[1, 2, 3, 4, 5].map((s) => (
+                    <FaStar key={s} />
+                  ))}
+                </div>
+
+                <p className="italic text-gray-600">
+                  {testimonial.text}
+                </p>
+
+                <h4 className="font-bold mt-6">
+                  {testimonial.name}
+                </h4>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="bg-gray-900 text-center py-24 px-6">
+        <h2 className="text-white text-5xl font-bold">
+          Ready to Taste the Difference?
+        </h2>
+
+        <p className="text-gray-400 mt-5 max-w-2xl mx-auto">
+          Join thousands enjoying our freshly baked creations.
+        </p>
+
+        <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
+          <button className="bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded-lg text-white font-semibold">
+            Order Now
+          </button>
+
+          <button className="border border-gray-500 hover:border-white px-8 py-4 rounded-lg text-white">
+            Contact Us
+          </button>
+        </div>
+      </section>
+    </main>
   );
 }
