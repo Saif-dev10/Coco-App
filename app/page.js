@@ -1,18 +1,11 @@
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 import {
   FaBirthdayCake,
   FaTruck,
   FaClock,
   FaHeart,
   FaStar,
-  FaPhone,
-  FaMapMarkerAlt,
-  FaEnvelope,
-  FaArrowRight,
-  FaFacebookF,
-  FaInstagram,
-  FaTwitter,
-  FaShoppingCart
 } from "react-icons/fa";
 
 export default function Layout() {
@@ -180,6 +173,8 @@ export default function Layout() {
           </button>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }
