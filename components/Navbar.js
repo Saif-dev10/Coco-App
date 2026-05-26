@@ -46,7 +46,7 @@ export function Navbar() {
                   </li>
                 </Link>
 
-                <Link href="about">
+                <Link href="/about">
                   <li 
                     className="cursor-pointer hover:bg-gray-100 active:bg-gray-50 w-full py-4 text-center"
                   >
@@ -54,7 +54,7 @@ export function Navbar() {
                   </li>
                 </Link>
 
-                <Link href="mission">
+                <Link href="/mission">
                   <li 
                     className="cursor-pointer hover:bg-gray-100 active:bg-gray-50 w-full py-4 text-center"
                   >
@@ -66,9 +66,17 @@ export function Navbar() {
           )}
           
           <ul className="hidden md:flex gap-10 text-lg">
-            <li className="cursor-pointer">Home</li>
-            <li className="cursor-pointer">About Us</li>
-            <li className="cursor-pointer">Mission</li>
+            <Link href="/">
+              <li className="cursor-pointer">Home</li>
+            </Link>
+
+            <Link href="/about">
+              <li className="cursor-pointer">About Us</li>
+            </Link>
+            
+            <Link href="/mission">
+              <li className="cursor-pointer">Mission</li>
+            </Link>
           </ul>
         </div>
       </div>
