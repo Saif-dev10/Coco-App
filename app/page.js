@@ -7,6 +7,7 @@ import {
   FaHeart,
   FaStar,
 } from "react-icons/fa";
+import Image from "next/image";
 
 export default function Layout() {
   const features = [
@@ -86,7 +87,15 @@ export default function Layout() {
                 <div
                   key={i}
                   className="w-10 h-10 rounded-full bg-gray-300 border-2 border-white"
-                />
+                >
+                  <Image
+                    src="/cake.jpg"
+                    width={80}
+                    height={80}
+                    alt="profile image"
+                    className="w-full h-full rounded-full"
+                  ></Image>
+                </div>
               ))}
             </div>
             <p className="text-white/70">
