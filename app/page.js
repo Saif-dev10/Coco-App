@@ -42,11 +42,11 @@ export default function Layout() {
       text: "The best cakes I've ever tasted."
     },
     {
-      name: "James Rodriguez",
+      name: "John Able",
       text: "Consistent quality every single time."
     },
     {
-      name: "Emily Chen",
+      name: "Naomi Paul",
       text: "Perfect for every event I organize."
     }
   ];
@@ -71,11 +71,11 @@ export default function Layout() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <button className="bg-blue-500 hover:bg-blue-600 px-8 py-3 rounded-lg text-white font-semibold transition">
+            <button className="bg-blue-500 hover:bg-blue-600 active:bg-blue-500 px-8 py-3 rounded-lg text-white font-semibold cursor-pointer transition">
               Try Now
             </button>
 
-            <button className="border border-white/50 hover:bg-white/10 px-8 py-3 rounded-lg text-white font-semibold transition">
+            <button className="border border-white/50 hover:bg-white/10 active:bg-white/20 px-8 py-3 rounded-lg text-white font-semibold cursor-pointer transition">
               View Menu
             </button>
           </div>
@@ -99,7 +99,9 @@ export default function Layout() {
       {/* FEATURES */}
       <section className="py-24 px-6">
         <div className="max-w-7xl mx-auto text-center">
+
           <h2 className="text-4xl font-bold">Good Food, Made Easy</h2>
+
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
             We combine traditional baking with modern convenience.
           </p>
@@ -164,11 +166,11 @@ export default function Layout() {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
-          <button className="bg-blue-500 hover:bg-blue-600 px-8 py-4 rounded-lg text-white font-semibold">
+          <button className="bg-blue-500 hover:bg-blue-600 active:bg-blue-500 px-8 py-4 rounded-lg text-white font-semibold cursor-pointer">
             Order Now
           </button>
 
-          <button className="border border-gray-500 hover:border-white px-8 py-4 rounded-lg text-white">
+          <button className="border border-gray-500 hover:border-white active:bg-white/20 px-8 py-4 rounded-lg text-white cursor-pointer">
             Contact Us
           </button>
         </div>
