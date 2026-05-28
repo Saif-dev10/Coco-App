@@ -1,35 +1,30 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import {
-  FaBirthdayCake,
-  FaTruck,
-  FaClock,
-  FaHeart,
-  FaStar,
-} from "react-icons/fa";
-import Image from "next/image";
+import { GiChefToque } from "react-icons/gi";
+import { FaGraduationCap, FaBell, FaMedal } from "react-icons/fa6";
+import { FaMapMarkerAlt, } from "react-icons/fa";
 
 const features = [
     {
-      icon: <FaBirthdayCake size={28} />,
+      icon: <GiChefToque size={28} />,
       title: "Skilled & Creative Expertise",
       description:
         "Professional craftsmanship in cakes, pasteries, and event execution with creativity and attention to detail."
     },
     {
-      icon: <FaTruck size={28} />,
+      icon: <FaGraduationCap size={28} />,
       title: "Training & Empowerment",
       description:
         "Hands-on practical training that equips individuals with real skills to become confident entrepreneurs."
     },
     {
-      icon: <FaClock size={28} />,
+      icon: <FaBell  size={28} />,
       title: "Memorable Experiences",
       description:
         "Elegent event decorations and catering services that transforms every occasion into unforgettable memories."
     },
     {
-      icon: <FaHeart size={28} />,
+      icon: <FaMedal size={28} />,
       title: "Quality & Satisfaction",
       description:
         "We use carefully selected ingredients and maintain professional standards to exceed expectations."
@@ -59,19 +54,40 @@ export default function About() {
       </div>
     </section>
 
-    <section className="flex px-10 bg-gray-100 py-10">
-      <div className="bg-[url('/bg-cake-2.jpg')] h-85 w-140 bg-cover bg-no-repeat"></div>
+    <section className="flex flex-col lg:flex-row px-6 sm:px-10 lg:px-14 bg-gray-100 py-10 gap-8 items-center">
 
-      <div className="px-10 flex flex-col gap-6">
-        <p className="font-bold text-3xl text-gray-800">Our Story</p>
+  {/* Image */}
+  <div className="bg-[url('/bg-cake-2.jpg')] bg-cover bg-center bg-no-repeat 
+                  w-full lg:w-1/2 h-64 sm:h-80 lg:h-[340px] rounded-md">
+  </div>
 
-        <p className="w-145">What started as a passion for creating beautiful and delicious experiences has grown into a brand trusted by families, event planners, and aspiring entreprenuers across Abuja.</p>
+  {/* Content */}
+  <div className="w-full lg:w-1/2 flex flex-col gap-6">
 
-        <p className="w-145">Wahat started as a passion for creating beautiful and delicious experiences has grown into a brand trusted by families, event planners, and aspiring entreprenuers across Abuja.</p>
+    <p className="font-bold text-2xl sm:text-3xl text-gray-800">
+      Our Story
+    </p>
 
-        <p className="w-145">Wahat started as a passion for creating beautiful and delicious experiences has grown into a brand trusted by families, event planners, and aspiring entreprenuers across Abuja.</p>
-      </div>
-    </section>
+    <p className="text-sm sm:text-base leading-relaxed text-gray-700">
+      What started as a passion for creating beautiful and delicious experiences 
+      has grown into a brand trusted by families, event planners, and aspiring 
+      entrepreneurs across Abuja.
+    </p>
+
+    <p className="text-sm sm:text-base leading-relaxed text-gray-700">
+      What started as a passion for creating beautiful and delicious experiences 
+      has grown into a brand trusted by families, event planners, and aspiring 
+      entrepreneurs across Abuja.
+    </p>
+
+    <p className="text-sm sm:text-base leading-relaxed text-gray-700">
+      What started as a passion for creating beautiful and delicious experiences 
+      has grown into a brand trusted by families, event planners, and aspiring 
+      entrepreneurs across Abuja.
+    </p>
+
+  </div>
+</section>
 
     <section className="flex flex-col justify-center items-center">
 
@@ -106,70 +122,70 @@ export default function About() {
     </section>
 
     <section className="px-6 sm:px-10 lg:px-14 pb-10">
-  <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
 
-    {/* Card 1 */}
-    <div className="border border-gray-300 p-6 hover:shadow-sm">
-      <p className="text-xl sm:text-2xl font-bold">
-        Why People Choose Coco Delight
-      </p>
+        {/* Card 1 */}
+        <div className="border border-gray-300 p-6 hover:shadow-sm">
+          <p className="text-xl sm:text-2xl font-bold">
+            Why People Choose Coco Delight
+          </p>
 
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-[2.2fr_1fr] gap-6 items-start">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-[2.2fr_1fr] gap-6 items-start">
 
-        {/* Text */}
-        <div className="flex flex-col gap-3 text-sm sm:text-base min-w-0">
-          <p>Practical learning with real-life experiences</p>
-          <p>Premium ingredients for delicious results</p>
-          <p>Professional service with attention to detail</p>
-          <p>Elegant and customized event solutions</p>
-          <p>Warm, friendly, and reliable customer care</p>
+            {/* Text */}
+            <div className="flex flex-col gap-3 text-sm sm:text-base min-w-0">
+              <p>Practical learning with real-life experiences</p>
+              <p>Premium ingredients for delicious results</p>
+              <p>Professional service with attention to detail</p>
+              <p>Elegant and customized event solutions</p>
+              <p>Warm, friendly, and reliable customer care</p>
+            </div>
+
+            {/* Images */}
+            <div className="grid grid-cols-2 gap-3">
+              <div className="bg-[url('/cake.jpg')] bg-cover bg-center h-48 rounded-md"></div>
+
+              <div className="flex flex-col gap-3">
+                <div className="bg-[url('/bg-cake.jpg')] bg-cover bg-center h-22 rounded-md"></div>
+                <div className="bg-[url('/bg-cake-4.jpg')] bg-cover bg-center h-22 rounded-md"></div>
+              </div>
+            </div>
+
+          </div>
         </div>
 
-        {/* Images */}
-        <div className="grid grid-cols-2 gap-3">
-          <div className="bg-[url('/cake.jpg')] bg-cover bg-center h-48 rounded-md"></div>
+        {/* Card 2 */}
+        <div className="border border-gray-300 p-6 hover:shadow-sm">
+          <p className="text-xl sm:text-2xl font-bold">
+            Our Location
+          </p>
 
-          <div className="flex flex-col gap-3">
-            <div className="bg-[url('/bg-cake.jpg')] bg-cover bg-center h-22 rounded-md"></div>
-            <div className="bg-[url('/bg-cake-4.jpg')] bg-cover bg-center h-22 rounded-md"></div>
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-[2.2fr_1fr] gap-6 items-start">
+
+            {/* Text */}
+            <div className="flex flex-col gap-3 text-sm sm:text-base min-w-0">
+
+              <p className="flex items-center gap-3 flex-wrap">
+                <FaMapMarkerAlt className="text-blue-500 shrink-0" />
+                <span>HKA, Road 8, Brick City Estate, Phase 1, Kubuwa, Abuja Federal Capital Territory</span>
+              </p>
+
+              <p className="flex items-center gap-3 flex-wrap">
+                <FaMapMarkerAlt className="text-blue-500 shrink-0" />
+                <span>HKA, Road 8, Brick City Estate, Phase 1, Kubuwa, Abuja Federal Capital Territory</span>
+              </p>
+            </div>
+
+            {/* Images */}
+            <div className="">
+              <div className="bg-[url('/cake.jpg')] bg-cover bg-center h-48 rounded-md"></div>
+            </div>
+
           </div>
         </div>
 
       </div>
-    </div>
-
-    {/* Card 2 */}
-    <div className="border border-gray-300 p-6 hover:shadow-sm">
-      <p className="text-xl sm:text-2xl font-bold">
-        Why People Choose Coco Delight
-      </p>
-
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-[2.2fr_1fr] gap-6 items-start">
-
-        {/* Text */}
-        <div className="flex flex-col gap-3 text-sm sm:text-base min-w-0">
-          <p>Practical learning with real-life experiences</p>
-          <p>Premium ingredients for delicious results</p>
-          <p>Professional service with attention to detail</p>
-          <p>Elegant and customized event solutions</p>
-          <p>Warm, friendly, and reliable customer care</p>
-        </div>
-
-        {/* Images */}
-        <div className="grid grid-cols-2 gap-3">
-          <div className="bg-[url('/cake.jpg')] bg-cover bg-center h-48 rounded-md"></div>
-
-          <div className="flex flex-col gap-3">
-            <div className="bg-[url('/bg-cake.jpg')] bg-cover bg-center h-22 rounded-md"></div>
-            <div className="bg-[url('/bg-cake-4.jpg')] bg-cover bg-center h-22 rounded-md"></div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-  </div>
-</section>
+    </section>
 
     <Footer />
     </>
