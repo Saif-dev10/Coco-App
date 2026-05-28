@@ -72,7 +72,7 @@ export default function Mission() {
   return (
     <>
       {/* HERO SECTION */}
-      <section className="relative min-h-[75vh] sm:min-h-[85vh] lg:min-h-screen bg-[url('/bg-cake-3.jpg')] bg-cover bg-center sm:bg-center lg:bg-center bg-no-repeat">
+      <section className="relative min-h-[75vh] sm:min-h-[85vh] lg:min-h-screen bg-[url('/mission-image.png')] bg-cover bg-center sm:bg-center lg:bg-center bg-no-repeat">
         <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative z-20">
@@ -144,7 +144,7 @@ export default function Mission() {
               </div>
             </div>
 
-            <div className="h-80 w-full rounded-2xl bg-[url('/bg-cake-2.jpg')] bg-cover bg-center shadow-sm sm:h-96 lg:h-[450px]"></div>
+            <div className="h-80 w-full rounded-2xl bg-[url('/group-people.jpg')] bg-cover bg-center shadow-sm sm:h-96 lg:h-[450px]"></div>
           </div>
         </div>
       </section>
@@ -153,7 +153,7 @@ export default function Mission() {
       <section className="bg-gray-50 px-6 py-20 sm:px-10 lg:px-14">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
-            <div className="order-2 h-80 w-full rounded-2xl bg-[url('/cake.jpg')] bg-cover bg-center shadow-sm sm:h-96 lg:order-1 lg:h-[450px]"></div>
+            <div className="order-2 h-80 w-full rounded-2xl bg-[url('/close-up-hands.jpg')] bg-cover bg-center shadow-sm sm:h-96 lg:order-1 lg:h-[450px]"></div>
 
             <div className="order-1 flex flex-col gap-6 lg:order-2">
               <div className="flex items-center gap-3">
@@ -249,7 +249,7 @@ export default function Mission() {
             </div>
           </div>
 
-          <div className="h-80 rounded-2xl bg-[url('/bg-cake-4.jpg')] bg-cover bg-center shadow-sm sm:h-96"></div>
+          <div className="h-80 rounded-2xl bg-[url('/location-2.avif')] bg-cover bg-center shadow-sm sm:h-96"></div>
         </div>
       </section>
 

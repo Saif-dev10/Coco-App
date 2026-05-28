@@ -55,7 +55,7 @@ export default function Layout() {
   return (
     <main className="bg-white text-gray-900">
       {/* HERO */}
-      <section className="relative min-h-[75vh] sm:min-h-[85vh] lg:min-h-screen bg-[url('/cake.jpg')] bg-cover bg-center sm:bg-center lg:bg-center bg-no-repeat">
+      <section className="relative min-h-[75vh] sm:min-h-[85vh] lg:min-h-screen bg-[url('/layout-image.png')] bg-cover bg-center sm:bg-center lg:bg-center bg-no-repeat">
        <div className="absolute inset-0 bg-black/60" />
 
         <div className="relative z-20">
