@@ -15,7 +15,9 @@ export function Navbar() {
     <main className="border-b border-gray-300">
       <div className="bg-white w-full h-16 z-20 flex justify-center items-center px-10 sticky top-0 left-0 right-0">
         <div className="flex justify-between w-full">
-          <h1 className="text-2xl md:text-3xl font-bold text-gray-800 cursor-pointer">Coco Delight</h1>
+          <Link href="/">
+            <h1 className="text-2xl md:text-3xl font-bold text-gray-800 cursor-pointer">Coco Delight</h1>
+          </Link>
 
           <ul>
             <li 

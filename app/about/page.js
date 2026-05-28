@@ -55,11 +55,11 @@ export default function About() {
         </p>
 
         <div className="mt-6 flex flex-col sm:flex-row gap-4">
-          <button className="bg-yellow-500 py-3 px-6 rounded-md hover:bg-yellow-400 transition">
+          <button className="bg-yellow-500 py-3 px-6 rounded-md hover:bg-yellow-400 transition active:bg-yellow-300 cursor-pointer">
             Explore Courses
           </button>
 
-          <button className="border border-white/50 py-3 px-6 rounded-md hover:bg-white/10 transition">
+          <button className="border border-white/50 py-3 px-6 rounded-md hover:bg-white/10 transition active:bg-white/20 cursor-pointer">
             View Our Work
           </button>
         </div>
