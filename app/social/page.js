@@ -1,8 +1,9 @@
-"use client";
+
 
 import { FcGoogle } from "react-icons/fc";
 import { FaFacebook } from "react-icons/fa";
 import Link from "next/link";
+import { signIn } from "@/auth";
 
 export default function SocialAuth({ mode = "signin" }) {
   const actionText = mode === "signup" ? "Sign up" : "Sign in";
@@ -24,10 +25,20 @@ export default function SocialAuth({ mode = "signin" }) {
         </div>
 
         {/* Google */}
-        <button className="w-full flex items-center justify-center gap-3 border rounded-xl py-3.5 mb-3 cursor-pointer">
-          <FcGoogle className="text-xl" />
-          <span>{actionText} with Google</span>
-        </button>
+        <form
+          action={ async () => {
+            "use server";
+            await signIn("google");
+          }}
+        >
+          <button
+            className="w-full flex items-center justify-center gap-3 border rounded-xl py-3.5 mb-3 cursor-pointer"
+          >
+            <FcGoogle className="text-xl" />
+            <span>{actionText} with Google</span>
+          </button>
+        </form>
+        
 
         {/* Facebook */}
         <button className="w-full flex items-center justify-center gap-3 bg-[#1877F2] text-white rounded-xl py-3.5 mb-6 cursor-pointer">
