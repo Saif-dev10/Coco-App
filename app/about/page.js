@@ -34,8 +34,8 @@ const features = [
 export default function About() {
   return (
     <>
-    <section className="relative min-h-screen bg-[url('/bg-cake-3.jpg')] bg-cover bg-center bg-no-repeat">
-      <div className="absolute inset-0 bg-black/60"></div>
+    <section className="relative min-h-[75vh] sm:min-h-[85vh] lg:min-h-screen bg-[url('/bg-cake-3.jpg')] bg-cover bg-center sm:bg-center lg:bg-center bg-no-repeat">
+      <div className="absolute inset-0 bg-black/60" />
 
       <div className="relative z-20">
         <Navbar />
