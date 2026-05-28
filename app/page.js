@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import Link from "next/link";
 import {
   FaBirthdayCake,
   FaTruck,
@@ -72,9 +73,11 @@ export default function Layout() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 mt-8">
-            <button className="bg-blue-500 hover:bg-blue-600 active:bg-blue-500 px-8 py-3 rounded-lg text-white font-semibold cursor-pointer transition">
-              Try Now
-            </button>
+            <Link href="/social">
+              <button className="bg-blue-500 hover:bg-blue-600 active:bg-blue-500 px-8 py-3 rounded-lg text-white font-semibold cursor-pointer transition">
+                Try Now
+              </button>
+            </Link>
 
             <button className="border border-white/50 hover:bg-white/10 active:bg-white/20 px-8 py-3 rounded-lg text-white font-semibold cursor-pointer transition">
               View Menu
@@ -175,9 +178,11 @@ export default function Layout() {
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4 mt-10">
-          <button className="bg-blue-500 hover:bg-blue-600 active:bg-blue-500 px-8 py-4 rounded-lg text-white font-semibold cursor-pointer">
-            Order Now
-          </button>
+          <Link href="/social">
+            <button className="bg-blue-500 hover:bg-blue-600 active:bg-blue-500 px-8 py-4 rounded-lg text-white font-semibold cursor-pointer">
+              Order Now
+            </button>
+          </Link>
 
           <button className="border border-gray-500 hover:border-white active:bg-white/20 px-8 py-4 rounded-lg text-white cursor-pointer">
             Contact Us

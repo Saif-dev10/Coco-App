@@ -1,5 +1,6 @@
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import Link from "next/link";
 
 import { GiChefToque, GiRibbonMedal } from "react-icons/gi";
 
@@ -90,9 +91,11 @@ export default function Mission() {
           </p>
 
           <div className="mt-8 flex gap-4">
-            <button className="rounded-md bg-yellow-500 px-8 py-3 font-semibold text-white transition hover:bg-yellow-400 active:bg-yellow-300 cursor-pointer">
-              Join Our Training
-            </button>
+            <Link href="/social">
+              <button className="rounded-md bg-yellow-500 px-8 py-3 font-semibold text-white transition hover:bg-yellow-400 active:bg-yellow-300 cursor-pointer">
+                Join Our Training
+              </button>
+            </Link>
 
             <button className="rounded-md border border-white/50 px-8 py-3 font-semibold text-white transition hover:bg-white/10 active:bg-white/20 cursor-pointer">
               Contact Us
@@ -265,9 +268,11 @@ export default function Mission() {
         </p>
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
-          <button className="rounded-lg bg-yellow-500 px-8 py-4 font-semibold text-white transition hover:bg-yellow-400 active:bg-yellow-300 cursor-pointer">
-            Explore Courses
-          </button>
+          <Link href="/social">
+            <button className="rounded-lg bg-yellow-500 px-8 py-4 font-semibold text-white transition hover:bg-yellow-400 active:bg-yellow-300 cursor-pointer">
+              Explore Courses
+            </button>
+          </Link>
 
           <button className="rounded-lg border border-gray-500 px-8 py-4 text-white transition hover:border-white active:bg-white/10 cursor-pointer">
             Contact Us
