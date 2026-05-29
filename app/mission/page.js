@@ -92,7 +92,7 @@ export default function Mission() {
 
           <div className="mt-8 flex gap-4">
             <Link href="/social">
-              <button className="rounded-md bg-yellow-500 px-8 py-3 font-semibold text-white transition hover:bg-yellow-400 active:bg-yellow-300 cursor-pointer">
+              <button className="rounded-md bg-blue-500 px-8 py-3 font-semibold text-white transition hover:bg-blue-400 active:bg-blue-300 cursor-pointer">
                 Join Our Training
               </button>
             </Link>
@@ -110,10 +110,10 @@ export default function Mission() {
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div className="flex flex-col gap-6">
               <div className="flex items-center gap-3">
-                <div className="rounded-full bg-yellow-500 p-3 text-white">
+                <div className="rounded-full bg-blue-500 p-3 text-white">
                   <FaBullseye size={24} />
                 </div>
-                <span className="text-sm font-semibold uppercase tracking-wide text-yellow-600">
+                <span className="text-sm font-semibold uppercase tracking-wide text-blue-600">
                   Our Purpose
                 </span>
               </div>
@@ -195,7 +195,7 @@ export default function Mission() {
                 key={i}
                 className="rounded-2xl border border-gray-100 bg-gray-50 p-8 text-left transition hover:shadow-xl"
               >
-                <div className="mb-4 text-yellow-500">{value.icon}</div>
+                <div className="mb-4 text-blue-500">{value.icon}</div>
 
                 <h3 className="text-xl font-bold text-gray-900">
                   {value.title}
@@ -221,7 +221,7 @@ export default function Mission() {
                 key={i}
                 className="rounded-2xl border border-gray-700 bg-gray-800 p-8"
               >
-                <div className="mb-4 flex justify-center text-yellow-500">
+                <div className="mb-4 flex justify-center text-blue-500">
                   {item.icon}
                 </div>
 
@@ -242,7 +242,7 @@ export default function Mission() {
             </h2>
 
             <div className="mt-8 flex items-start gap-4">
-              <div className="rounded-lg bg-yellow-500 p-2 text-white">
+              <div className="rounded-lg bg-blue-500 p-2 text-white">
                 <FaMapMarkerAlt size={18} />
               </div>
 
@@ -269,7 +269,7 @@ export default function Mission() {
 
         <div className="mt-10 flex flex-col justify-center gap-4 sm:flex-row">
           <Link href="/social">
-            <button className="rounded-lg bg-yellow-500 px-8 py-4 font-semibold text-white transition hover:bg-yellow-400 active:bg-yellow-300 cursor-pointer">
+            <button className="rounded-lg bg-blue-500 px-8 py-4 font-semibold text-white transition hover:bg-blue-400 active:bg-blue-300 cursor-pointer">
               Explore Courses
             </button>
           </Link>

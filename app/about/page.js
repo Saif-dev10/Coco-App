@@ -57,7 +57,7 @@ export default function About() {
 
         <div className="mt-6 flex flex-col sm:flex-row gap-4">
           <Link href="/social">
-            <button className="bg-yellow-500 py-3 px-6 rounded-md hover:bg-yellow-400 transition active:bg-yellow-300 cursor-pointer">
+            <button className="bg-blue-500 py-3 px-6 rounded-md hover:bg-blue-400 transition active:bg-blue-300 cursor-pointer">
               Explore Courses
             </button>
           </Link>
