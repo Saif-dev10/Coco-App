@@ -90,15 +90,15 @@ export default function About() {
     </p>
 
     <p className="text-sm sm:text-base leading-relaxed text-gray-700">
-      What started as a passion for creating beautiful and delicious experiences 
-      has grown into a brand trusted by families, event planners, and aspiring 
-      entrepreneurs across Abuja.
+      We are committed to empowering individuals through practical hands-on training 
+      in baking, pastries, small chops production, and event decoration, helping 
+      aspiring professionals build confidence and valuable entrepreneurial skills.
     </p>
 
     <p className="text-sm sm:text-base leading-relaxed text-gray-700">
-      What started as a passion for creating beautiful and delicious experiences 
-      has grown into a brand trusted by families, event planners, and aspiring 
-      entrepreneurs across Abuja.
+      From carefully crafted treats to beautifully styled event experiences, our 
+      focus remains on quality, customer satisfaction, and delivering services that 
+      leave lasting impressions for families, organizations, and celebrations across Abuja.
     </p>
 
   </div>
