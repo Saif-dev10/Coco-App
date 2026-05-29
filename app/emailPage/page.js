@@ -1,12 +1,12 @@
 "use client";
 
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { useSearchParams } from "next/navigation";
 import { TextField, IconButton, InputAdornment } from "@mui/material";
 import { Visibility, VisibilityOff } from "@mui/icons-material";
 import Link from "next/link";
 
-export default function EmailAuthForm() {
+function EmailAuthForm() {
   const searchParams = useSearchParams();
   const mode = searchParams.get("mode") || "signin";
 
@@ -174,5 +174,13 @@ export default function EmailAuthForm() {
 
       </div>
     </div>
+  );
+}
+
+export default function EmailPage() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <EmailAuthForm />
+    </Suspense>
   );
 }
