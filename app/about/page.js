@@ -182,12 +182,12 @@ export default function About() {
 
               <p className="flex items-center gap-3 flex-wrap">
                 <FaMapMarkerAlt className="text-blue-500 shrink-0" />
-                <span>HKA, Road 8, Brick City Estate, Phase 1, Kubuwa, Abuja Federal Capital Territory</span>
+                <span>HKA, Road 8, Brick City Estate, Phase 1, Kubwa, Abuja Federal Capital Territory</span>
               </p>
 
               {/* <p className="flex items-center gap-3 flex-wrap">
                 <FaMapMarkerAlt className="text-blue-500 shrink-0" />
-                <span>HKA, Road 8, Brick City Estate, Phase 1, Kubuwa, Abuja Federal Capital Territory</span>
+                <span>HKA, Road 8, Brick City Estate, Phase 1, Kubwa, Abuja Federal Capital Territory</span>
               </p> */}
             </div>
 
